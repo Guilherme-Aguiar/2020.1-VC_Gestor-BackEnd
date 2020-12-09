@@ -31,7 +31,7 @@ matrix:
       - sonar-scanner -Dsonar.projectKey=Guilherme-Aguiar_2020.1-VC_Gestor-BackEnd -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
 
 script: 
-  - cd $TARGET && npm install && npm run test && chmod 400 deploy_rsa;
+  - cd $TARGET && chmod 400 deploy_rsa;
 
 # deploy:
 #   provider: script
