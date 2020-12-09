@@ -1,6 +1,6 @@
 # 2020.1-VC_Gestor-BackEnd
 
-
+ 
 <p align="center">
   <img src="https://i.imgur.com/eit3CHj.png" alt="logo" />
 </p>
@@ -16,7 +16,7 @@
 ## 🐳 Guia de Uso do Docker
 
 * ### Instalação
-Primeiramente é necessário ter o docker instalado, caso não tenha acesse o [Instalação docker](https://docs.docker.com/engine/installation/linux/docker-ce/). Após feito isso, instale o [Docker-compose](https://docs.docker.com/compose/install/).
+Primeiramente é necessário ter o docker instalado, caso não tenha acesse o link [Instalação docker](https://docs.docker.com/engine/installation/linux/docker-ce/). Após feito isso, instale o [Docker-compose](https://docs.docker.com/compose/install/).
 
 * ### Organização do projeto
 O projeto é separado em diferentes pacotes, sendo que cada microserviço está separado em um container, sendo que todos os pacotes precisam do container "postgres" para funcionar corretamente. Os containers existentes atualmente são: resolution, user e postgres.
