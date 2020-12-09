@@ -20,7 +20,6 @@ notifications:
   only:
   - master
   - development
-  - Issue_177-SonarMochaIntegration
 
 matrix:
   include:
@@ -34,9 +33,9 @@ matrix:
 script: 
   - cd $TARGET && npm install && npm run test && chmod 400 deploy_rsa;
 
-deploy:
-  provider: script
-  script: 
-    - bash deploy.sh ${TRAVIS_BRANCH}
-  on:
-    branch: Issue_177-SonarMochaIntegration
+# deploy:
+#   provider: script
+#   script: 
+#     - bash deploy.sh ${TRAVIS_BRANCH}
+#   on:
+#     branch: Issue_177-SonarMochaIntegration
