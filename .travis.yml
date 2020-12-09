@@ -39,4 +39,4 @@ deploy:
   script: 
     - bash deploy.sh ${TRAVIS_BRANCH}
   on:
-    branch: master
+    branch: Issue_177-SonarMochaIntegration
