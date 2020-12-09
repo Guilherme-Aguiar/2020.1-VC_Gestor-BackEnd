@@ -15,9 +15,11 @@ const User = require("../models/user");
 const jwt = require("jsonwebtoken");
 const CryptoResolve  = require("../middlewares/CryptoResolve");
 const fs = require("fs");
-const privateFake = fs.readFileSync("./src/test/fakeprivate.json");
 
-
+currentPath = fs.realpathSync(".")
+console.log('Current Path = ', currentPath + '/packages/user/src/test/ControllerTesting.spec.js')
+const privateFake = fs.readFileSync(currentPath+"/packages/user/src/test/fakeprivate.json");
+// /home/gui/unb/2020.1/eps/test_ci_2/2020.1-VC_Gestor-BackEnd/packages/user/src/test/fakeprivate.json
 chai.use(chaiaspromise);
 
 
