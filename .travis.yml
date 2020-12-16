@@ -20,6 +20,7 @@ notifications:
   only:
   - master
   - development
+  - r1_retro_branch
 
 matrix:
   include:
